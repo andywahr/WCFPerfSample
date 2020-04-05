@@ -9,6 +9,14 @@
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
+<ul>
+    <li>@($"DefaultConnectionLimit = {System.Net.ServicePointManager.DefaultConnectionLimit}")
+    <li>@($"Expect100Continue = {System.Net.ServicePointManager.Expect100Continue}")
+    <li>@($"UseNagleAlgorithm = {System.Net.ServicePointManager.UseNagleAlgorithm}")
+    <li>@($"HostingEnvironment.MaxConcurrentRequestsPerCPU = {System.Web.Hosting.HostingEnvironment.MaxConcurrentRequestsPerCPU}")
+    <li>@($"HostingEnvironment.MaxConcurrentThreadsPerCPU = {System.Web.Hosting.HostingEnvironment.MaxConcurrentThreadsPerCPU}")
+</ul>
+
 <div class="row">
     <div class="col-md-4">
         <h2>Getting started</h2>
